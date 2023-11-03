@@ -1,9 +1,9 @@
-NAME = contacts
+NAME = contacts.out
 CC = c++
 FLAGS = -Wall -Wextra -Werror
 SFLAG = -std=c++98
 
-SRC = *.cpp
+SRC = Contacts.cpp main.cpp PhoneBook.cpp set_data.cpp
 OBJ = $(SRC: .cpp=.o)
 CLASSES = *.tpp
 
@@ -11,7 +11,7 @@ all: $(NAME)
 
 $(NAME):
 	@$(CC) $(FLAGS) $(SFLAG) -c $(SRC)
-	@$(CC) $(FLAGS) $(SFLAG) $(OBJ) -o $(NAME)
+	@$(CC) $(FLAGS) $(SFLAG) -g $(OBJ) $< -o $@
 	@echo "\033[92mMegaphone compiled!\033[m"
 
 clean:
