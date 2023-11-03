@@ -3,7 +3,7 @@ CC = c++
 FLAGS = -Wall -Wextra -Werror
 SFLAG = -std=c++98
 
-SRC = *.cpp
+SRC = newZombie.cpp main.cpp randomChump.cpp Zombie.cpp
 OBJ = $(SRC: .cpp=.o)
 CLASSES = *.tpp
 
