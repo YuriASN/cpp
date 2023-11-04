@@ -1,4 +1,4 @@
-NAME = brain
+NAME = moar
 CC = c++
 FLAGS = -Wall -Wextra -Werror
 SFLAG = -std=c++98
