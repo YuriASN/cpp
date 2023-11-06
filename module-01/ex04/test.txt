@@ -1,0 +1,7 @@
+Esse é um teste simples
+com multiplas para retirar linhas
+
+
+linhas em para retirar branco e caracteres especiais
+é ú î ẽ
+EOF
