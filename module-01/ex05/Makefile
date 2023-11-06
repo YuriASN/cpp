@@ -1,9 +1,9 @@
-NAME = SuperSed
+NAME = Harl
 CC = c++
 FLAGS = -Wall -Wextra -Werror
 SFLAG = -std=c++98
 
-SRC = main.cpp
+SRC = main.cpp Harl.cpp
 OBJ = $(SRC: .cpp=.o)
 
 all: $(NAME)
@@ -18,7 +18,7 @@ clean:
 	@echo "\033[91mclean done.\033[m"
 
 fclean: clean
-	@/bin/rm -f $(NAME) libft.h.gch libft.so *.replace
+	@/bin/rm -f $(NAME) libft.h.gch libft.so
 	@echo "\033[91mfclean done.\033[m"
 
 re: fclean all
